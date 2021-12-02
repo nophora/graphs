@@ -1,0 +1,170 @@
+#cont svg:nth-child(2) g path {
+   fill: none;
+   animation: load 10s;
+    stroke-width: 22px;
+    animation: load 3s linear
+  }
+
+  #cont svg:nth-child(2) {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: rotate(-120deg);
+ }
+ #cont svg:nth-child(1) {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: rotate(-120deg);
+  color: #eee
+}
+ 
+
+  @keyframes load {
+    0% {
+      stroke-dasharray:105; 
+    }
+   
+  
+  }
+
+  .cont {
+    height: 380px;
+    width: 380px;
+    display: flex;
+    justify-content: flex-start;
+    position: absolute;
+    align-items: flex-start;
+    border-radius: 100%;
+    background-color: rgba(34, 35, 60, 0);
+   
+  }
+
+  
+
+
+   /* animation: load 10s;  ;
+  gradientTransform="rotate(80)" 
+  
+   */
+    /*background-color: rgb(34, 35, 60);*/
+  .cont2 {
+    height: 380px;
+    width: 380px;
+    display: flex;
+    justify-content: flex-start;
+    position: absolute;
+    align-items: flex-start;
+    border-radius: 100%;
+    background-color:rgb(34, 35, 60) ;
+   transform: rotate(-120deg);
+  }
+
+  .cont3 {
+    height: 380px;
+    width: 380px;
+    display: flex;
+    justify-content: flex-start;
+    position: absolute;
+    align-items: flex-start;
+    background-color:rgb(34, 35, 60) ;
+   transform: rotate(0deg);
+  }
+
+  .jk{
+    background-color: rgb(145, 145, 145);
+  
+  }
+
+  .percent{
+    height: 280px;
+    width: 280px;
+    border-radius: 100%;
+    box-shadow: 2px 3px 15px 3px black;
+    color: white;
+    position: relative;
+    font-size: 49px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(44, 46, 77);
+  }
+  .blure{
+    height: 400px;
+    width: 400px;
+    margin-left: 0px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(9, 8, 10, 0);
+
+  }
+    
+
+  /*
+left: 25%;
+    top: 25%;
+ margin-top: -80px;
+    margin-left: -80px;
+      line-height: 160px;
+*/
+  #cont:after {
+    content: attr(data-percent);
+    position: absolute;
+    height: 100%; 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 1em black;
+    border-radius: 100%;
+    text-shadow: 0 0 0.5em black;
+  }
+  
+
+
+  /*NEW CODE*/
+
+
+
+
+  
+  .progress {
+    position: relative;
+    display: inline-block;
+    padding: 0;
+    text-align: center;
+  }
+  .progress .bar {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    color: #15ff00;
+    font-family: Lato;
+    font-weight: 100;
+    margin: 2rem;
+  }
+  .progress .bar:after {
+    content: attr(data-percent);
+    position: absolute;
+    width: 100%;
+    top: 3.7rem;
+    left: 0;
+    font-size: 2rem;
+    text-align: center;
+  }
+  .progress svg {
+    width: 10rem;
+    height: 10rem;
+  }
+  .progress svg:nth-child(2) {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: rotate(-90deg);
+  }
+  
+
+  
